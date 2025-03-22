@@ -9,6 +9,7 @@ app.use(cors({}));
 const PORT = process.env.PORT || 5000;
 app.use("/sponsor", require("./routers/sponser"));
 app.use("/testitemdeatils", require("./routers/tableItem"));
+app.use("/studytitle", require("./routers/studytitle"));
 app.get("/working", (req, res) => {
   return res.send({ message: "hi welcome to paint application" });
 });
